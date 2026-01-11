@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+body {
+  background: radial-gradient(circle at top, #12172a, #05070f);
+  font-family: 'JetBrains Mono', monospace;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background: rgba(255,255,255,0.06);
+  padding: 30px;
+  border-radius: 20px;
+  width: 320px;
+  box-shadow: 0 0 30px rgba(0,234,255,.25);
+}
+
+h2 {
+  text-align: center;
+  text-shadow: 0 0 12px #00eaff;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: rgba(255,255,255,0.05);
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid #00eaff;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 0 15px #00eaff;
+}
