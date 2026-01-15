@@ -1,6 +1,7 @@
 <?php
 session_start();
 include "../config/database.php";
+
 if ($_POST) {
     $q = $conn->prepare("SELECT * FROM users WHERE username=?");
     $q->bind_param("s", $_POST['username']);
@@ -10,18 +11,35 @@ if ($_POST) {
     if ($u && password_verify($_POST['password'], $u['password'])) {
         $_SESSION['user'] = $u;
         header("Location: ../pages/dashboard.php");
+        exit;
     }
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="../assets/css/auth.css">
-<body>
-<form method="post">
-<h2>Login – The Catalyst</h2>
-<input name="username" placeholder="Username">
-<input type="password" name="password" placeholder="Password">
-<button>Login</button>
-</form>
+<title>Login – The Catalyst</title>
+</head>
+
+<body class="cute-bg">
+
+<div class="login-card">
+  <h2>🧪The Catalyst</h2>
+  <center><p class="subtitle">Lab Survival Simulator</p></center>
+
+  <form method="post">
+    <input name="username" placeholder="👤 Username" required>
+    <input type="password" name="password" placeholder="🔒 Password" required>
+    <button>Login</button>
+  </form>
+
+  <p class="hint">
+    <center>Belum punya akun?  
+    <a href="register.php">Daftar dulu</a></center>
+  </p>
+</div>
+
 </body>
 </html>

@@ -124,7 +124,7 @@ function add(type) {
   if (type === "red") delta = Math.random() * 12 + 6;
   if (type === "blue") delta = -(Math.random() * 12 + 6);
   if (type === "green") delta = Math.random() * 6 - 3;
-  if (type === "catalyst") delta *= 2;
+  if (type === "catalyst") delta *= 3 + 2;
 
   temp += Math.round(delta);
 
