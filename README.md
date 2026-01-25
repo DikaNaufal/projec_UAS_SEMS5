@@ -63,3 +63,8 @@ Fakta sains harian yang sangat *relatable*.
 ├── [Tools]   --> Kalkulator IPA "pintar" & Step-by-Step.
 ├── [Predict] --> Ramalan IPK/Karier lucu.
 └── [Vibe]    --> Lo-fi music player + Lab Ambient Visuals.
+
+---
+
+## Link : https://calcuu.my.id
+
